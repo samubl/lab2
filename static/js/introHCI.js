@@ -10,7 +10,8 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$("#testjs").click(function(e) {
-		$('.jumbotron h1').text("Javascript is connected");
+        if ($('.jumbotron h1').value == "haha thx") $('.jumbotron h1').text("haha thx");
+        else $('.jumbotron h1').text("haha thx");
 	});
     $("a.thumbnail").click(projectClick);
 
@@ -18,10 +19,10 @@ function initializePage() {
 	// example: $("#div-id").click(functionToCall);
 }
 
-function projectClick(e) { 
+function projectClick(e) {
     // prevent the page from reloading      
     e.preventDefault();
     // In an event handler, $(this) refers to      
     // the object that triggered the event      
-    $(this).css("background-color", "#7fff00");
+    $(this).css("background-color", "#E317FF");
 }
