@@ -16,15 +16,26 @@ body {
      padding: 20px;
 }
 
-#testjs.clicker {
-     content: "haha thx";
-     opacity: 0.2;
-}
-
 
 .jumbotron {
 	position: relative;
 	background: none;
+}
+
+.jumbotron p {
+     color: #6e6e6e;
+}
+
+.jumbotron p.active {
+     color: #1f6ddd;
+}
+
+.jumbotron h1.active {
+     color: #dd5b1f;
+}
+
+#testjs.movement{
+     color: rgb(75, 204, 0);
 }
 
 .jumbotron:after {

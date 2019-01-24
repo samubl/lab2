@@ -10,7 +10,15 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$("#testjs").click(function(e) {
-        $('.jumbotron h1').toggleClass("clicker");
+        $('.jumbotron h1').toggleClass("active");
+        $(".jumbotron p").toggleClass("active");
+        $("#testjs").toggleClass("movement");
+        if ($("#testjs").text() == "Click Me!") {
+            $("#testjs").text("Click Me Again!");
+        } else {
+            $("#testjs").text("Click Me!");
+        }
+
 	});
     $("a.thumbnail").click(projectClick);
 
