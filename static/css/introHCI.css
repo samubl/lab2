@@ -16,6 +16,12 @@ body {
      padding: 20px;
 }
 
+#testjs.clicker {
+     content: "haha thx";
+     opacity: 0.2;
+}
+
+
 .jumbotron {
 	position: relative;
 	background: none;

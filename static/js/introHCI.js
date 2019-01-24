@@ -10,8 +10,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$("#testjs").click(function(e) {
-        if ($('.jumbotron h1').value == "haha thx") $('.jumbotron h1').text("haha thx");
-        else $('.jumbotron h1').text("haha thx");
+        $('.jumbotron h1').toggleClass("clicker");
 	});
     $("a.thumbnail").click(projectClick);
 
@@ -20,7 +19,8 @@ function initializePage() {
 }
 
 function projectClick(e) {
-    // prevent the page from reloading      
+    // prevent the page from reloading    
+    console.log("Project Click");  
     e.preventDefault();
     // In an event handler, $(this) refers to      
     // the object that triggered the event      
